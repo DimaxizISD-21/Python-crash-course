@@ -1,0 +1,111 @@
+# print("#################################################")
+
+# def make_pizza(*toppings):
+# 	print("\nСоздаем пиццу с её компонентами: ")
+# 	for topping in toppings:
+# 		print(" -" + topping)
+
+# make_pizza('Chilli')
+# make_pizza('tomato', 'cheese', 'mushrooms', 'peppers')
+
+# print("#################################################")
+
+# def make_pizza(size, *toppings):
+# 	print("\nMaking a " + str(size) + 
+# 		"-inch pizza with the following toppings: ")
+# 	for topping in toppings:
+# 		print(" -" + topping)
+
+# make_pizza(20, 'pepperoni')
+# make_pizza(16, 'tomato', 'cheese', 'mushrooms', 'peppers')
+
+# print("#################################################")
+
+# def build_profile(first, last, **user_info):
+# 	profile = {}
+# 	profile['First_name'] = first
+# 	profile['Last_name'] = last
+# 	for key, value in user_info.items():
+# 		profile[key] = value
+# 	return profile
+
+# information_profile = build_profile('Oleksiy', 'Nikolaenko', Location='Kiev', 
+# 	Study='State university of Telecomunication Information Technology', 
+# 	Learn_programing_language='Python', year=19)
+
+# print(information_profile)
+
+##############---BONUS---##############
+
+# def create_profile(first, last, age=''):
+# 	print('\n')
+# 	user = {}					# user = {
+# 								# 	'First_name': first,
+# 								# 	'Last_name': last,
+# 								# 	'age': age
+# 								# }
+	
+# 	user['First name:'] = first
+# 	user['Last name'] = last
+# 	user['age'] = age
+
+# 	print('\nВозвращаю словарь!\n')
+# 	return user
+
+# first = input("Ваше имя: ")
+# last = input("Ваша фамилия: ")
+# age = int(input('Сколько вам лет ? '))
+
+# n = create_profile(first, last, age)
+# print(n)
+
+# print("#################################################")
+
+#Упражнения 8.12-14
+
+#Упражнение 8.12
+
+# def sandwich(name, *toppings):
+# 	print('\nThis is sandwich: ' + name.title())
+# 	print('\nSandwich topping: ')
+# 	for topping in toppings:
+# 		print(' -' + topping)
+
+# sandwich('Cherry sandwich', 'tomato', 'chesse', 'cherry', 'beef')
+# sandwich('Kiss pineapple', 'pineapple', 'tomato', 'chesee', 'beef')
+# sandwich('Py Burger', 'beef', 'chesse', 'vegitables', 'Python)')
+
+#Упражнение 8.13
+
+# def create_profile(f_name, l_name, age, **toppings):
+# 	user = {}
+# 	user['First name'] = f_name
+# 	user['Last name'] = l_name
+# 	user['Age'] = age
+
+# 	for key, value in toppings.items():
+# 		user[key] = value
+
+# 	return user
+
+# user = create_profile('Oleksiy', 'Nikolaenko', 19, Live='Ukraine,Kyiv', 
+# 	Study='DUT', Hobby='Python programing')
+
+# print(user)
+
+#Упражнение 8.14
+
+# def SaveInfoCar(manufacturer, car_name, **toppings):
+# 	car = {}
+# 	car['Manufacturer'] = manufacturer
+# 	car['Name car'] = car_name
+
+# 	for key, value in toppings.items():
+# 		car[key] = value
+
+# 	return car
+
+# car = SaveInfoCar('BMW', 'x5m', Color='black', Tow_package=True)
+
+# print(car)
+

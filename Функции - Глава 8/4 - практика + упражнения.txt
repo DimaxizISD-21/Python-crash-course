@@ -1,0 +1,67 @@
+# def msg_hello(names):
+# 	for name in names:
+# 		msg = 'Hello, ' + name.title() + '!'
+# 		print(msg)
+
+# user = ['Dimax', 'Alex', 'Nastya']
+# msg_hello(user)
+
+# print("########################################################")
+
+# def print_models(unprinted_model, completed_models):
+# 	while unprinted_model:
+# 		current_model = unprinted_model.pop()
+# 		print('Current printing: ' + current_model)
+# 		completed_models.append(current_model)
+
+
+# def show_models(completed_models):
+# 	print('\nComplite process: ')
+# 	for completed_model in completed_models:
+# 		print(completed_model)
+
+
+# unprinted_model = ['Samsung Galaxy S10', 'Xiaomi', 'Meizu']
+# completed_models = []
+# print_models(unprinted_model, completed_models) #unprinted_model[:] - делает копию списка
+# show_models(completed_models)
+
+# print("########################################################")
+
+#Упражнения 8.9
+
+# name_magicans = ['Solderax', 'Alakozam', 'Robert Orion']
+
+# def show_magicans(name_magicans):
+# 	for name in name_magicans:
+# 		print(name)
+
+# show_magicans(name_magicans)
+
+# print("########################################################")
+
+#Упражнения 8.10
+
+# name_magicans = ['Solderax', 'Alakozam', 'Robert Orion']
+
+# def show_magicans(name_magicans):
+# 	for name in name_magicans:
+# 		print(name)
+
+# def make_great(name_magicans):
+# 	for name in name_magicans:
+# 		print(name + ' «Great»')
+	
+# make_great(name_magicans)
+# show_magicans(name_magicans)
+
+# print("########################################################")
+
+#Упражнения 8.11
+
+# print('\nКопирование списка ps.Копия:')
+# make_great(name_magicans[:])
+# new_list = []
+# new_list = name_magicans[:]
+# print('\nВызов функции из нового созданого списка:')
+# make_great(new_list)

@@ -1,0 +1,85 @@
+#Упражнения 8-6 / 8.8
+
+#8.6
+# def city_country(city, country):
+# 	formated = city + ", " + country
+# 	return formated.title()
+
+# inputed = city_country('vasylkiv', 'ukraine')
+# print(inputed)
+
+# inputed = city_country('paris', 'france')
+# print(inputed)
+
+# inputed = city_country('new york', 'usa')
+# print(inputed)
+
+# print("########################################################")
+
+#8.7
+# def make_album(n_group, n_album, track=''):
+# 	artist = {
+# 		'name_group': n_group,
+# 		'name_album': n_album
+# 	}
+
+# 	if track:
+# 		artist['tracks'] = track
+# 	return artist
+
+# artist1 = make_album('Rammstein', 'Mutter')
+# print(artist1)
+
+# artist2 = make_album('Imagine Dragons', 'Evolve')
+# print(artist2)
+
+# artist3 = make_album('Linking Park', 'Numb')
+# print(artist3)
+
+# tracks_album = make_album('Imagine Dragons', 'Evolve',15)
+# print(tracks_album)
+
+# print("########################################################")
+
+#8.7 - 8.8
+# def make_album(n_group, n_album, track=''):
+# 	artist = {
+# 			'name_group': n_group,
+# 			'name_album': n_album
+# 		}
+
+# 	if track:
+# 		artist['tracks'] = track
+
+# 	return artist
+
+# while True:
+# 	print("\nЗдравствуйте, вы попали в музыкальную студию Records!")
+# 	print("Если вы хотите выйти из программы то введите 'exit'\n")
+	
+# 	try:
+# 		n_group = input('Введите название группы: ')
+
+# 		if n_group == 'exit':
+# 			print("Вы вышли из программы...")
+# 			break
+
+# 		n_album = input('Введите название альбома: ')
+
+# 		if n_album == 'exit':
+# 			print("Вы вышли из программы...")
+# 			break
+
+# 		track = int(input('Введите количество песен в альбоме: '))
+
+# 	except ValueError:
+# 		print('\nВы ввели неверное значение!')
+# 		print("Попробуйте ещё раз")
+# 		continue
+
+# 	except KeyboardInterrupt:
+# 		print("\nВы вышли из программы...")
+# 		break
+
+# 	formated = make_album(n_group, n_album, track)
+# 	print(formated)

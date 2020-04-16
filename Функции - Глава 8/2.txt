@@ -1,0 +1,70 @@
+# def get_formated_name(f_name, l_name):
+# 	full_name = f_name + ' ' + l_name
+# 	return full_name.title()
+
+# user = get_formated_name('oleksiy', 'nikolaenko')
+# print(user)
+
+# print("########################################################")
+
+# def get_formated_name(f_name, middle_name, l_name):
+# 	full_name = f_name + ' ' + middle_name + ' ' + l_name
+# 	return full_name.title()
+
+# user2 = get_formated_name('oleksiy', 'dimax', 'nikolaenko')
+# print(user2)
+
+# print("########################################################")
+
+# def formated_name(f_name, l_name, middle_name=''):
+# 	if middle_name:
+# 		full_name = f_name + ' ' + l_name + ' ' + middle_name
+# 	else:
+# 		full_name = f_name + ' ' + l_name
+# 	return full_name.title()
+
+# user = formated_name('oleksiy', 'nikolaenko')
+# print(user)
+
+# user = formated_name('oleksiy', 'nikolaenko', 'dimaxiz')
+# print(user)
+
+# print("########################################################")
+
+# def build_person(f_name, l_name):
+# 	person = {'first': f_name, 'last': l_name}
+# 	return person
+
+# user = build_person('Oleksiy', 'Nikolaenko')
+# print(user)
+
+# print("########################################################")
+
+# def build_person(f_name, l_name, age=''):
+# 	person = {'first': f_name, 'last': l_name}
+# 	if age:
+# 		person['age'] = age
+# 	return person
+
+# user = build_person('Oleksiy', 'Nikolaenko', age=19)
+# print(user)
+
+# print("########################################################")
+
+def get_formated_name(f_name, l_name):
+	full_name = f_name + ' ' + l_name
+	return full_name.title()
+
+active = True
+while active:
+	try:
+		print("\nПожалуйста скажи мне своё имя) ")
+		f_name = input("First name: ")
+		l_name = input("Last name: ")
+
+		formatted_name = get_formated_name(f_name, l_name)
+		print('\nПривет, ' + formatted_name + "!")
+
+	except KeyboardInterrupt:
+		active = False
+		print('\nВы вышли из программы...')

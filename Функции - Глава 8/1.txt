@@ -1,0 +1,41 @@
+# def display_msg():
+# 	print("Hello)))")
+
+# display_msg()
+
+# def favorite_book(book):
+# 	print("One of my favorite book is " + book.title())
+
+# favorite_book('Izuchaem_Python')
+
+#print('######################################################')
+
+# def my_animal(animal, name='лакки'):
+# 	print('У меня есть ' + animal + ' и его зовут ' + name.title())
+
+# my_animal('кот')
+# my_animal(animal='кот')
+# my_animal('кот', 'nike')
+# my_animal(animal='собака', name='haskie')
+# my_animal(name='haskie', animal='собака')
+
+#print('######################################################')
+
+# def make_shirt(text, size_shirt):
+# 	print("\nSize shit: " + str(size_shirt))
+# 	print("Print text on shirt: " + text)
+
+# make_shirt('"I love Python"', '34')
+
+# def make_shirt(text, size_shirt='L'):
+# 	print("\nSize shit: " + size_shirt)
+# 	print("Print text on shirt: " + text)
+
+# make_shirt('"I like Python"')
+
+# def describe_city(city, country='ukraine'):
+# 	print('\n' + city.title() + ' is in ' + country.title())
+
+# describe_city('kiev', 'ukraine')
+# describe_city('lviv', country='ukraine')
+# describe_city(country='usa', city='rivne')

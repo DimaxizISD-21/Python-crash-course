@@ -1,0 +1,13 @@
+types_of_pizza = ['Neapolitan Pizza','Chicago Pizza','New York Style Pizza','Sicilian Pizza','Greek Pizza','California Pizza','Tomato Pie']
+friend_pizza = types_of_pizza[:]
+
+types_of_pizza.append('Detroit Style')
+friend_pizza.append('New England Greek Style')
+
+print("My favorite pizzas are:")
+for pizza in types_of_pizza:
+	print(pizza)
+
+print("\nMy friend’s favorite pizzas are:")
+for pizza_1 in friend_pizza:
+	print(pizza_1)

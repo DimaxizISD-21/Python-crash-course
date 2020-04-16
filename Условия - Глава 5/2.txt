@@ -1,0 +1,25 @@
+# users = ['Dimax','Andrey','James','John','Pedro']
+# for user in users:
+# 	if user == "Dimax":
+# 		print("Hello admin!!!")
+# 	elif user == "James":
+# 		print("\nHello James, whats up?")
+# 	else:
+# 		print("\nДобро пожаловать, " + user.title() + "!")
+
+# if not users:
+# 	print("Список пользователей пуст!")
+# else: 
+# 	print("\nСписок пользователей не пуст!!!")
+
+current_users = ['Dimax','Andrey','James','John','Pedro','Katya','Tomas']
+new_users = ['Katya','Tomas']
+for new_user in new_users:
+	if new_user in current_users:
+ 		print("Это имя уже используется, пожалуйста введите другое имя!")
+new_name = input("\nВведите имя: ")
+if new_name in current_users:
+	print("Это имя занято!")
+else:
+	current_users.append(new_name)
+print(current_users)

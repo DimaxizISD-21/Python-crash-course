@@ -1,0 +1,69 @@
+#####--Упражнения--####
+
+#Упражнение 9.14
+# from collections import OrderedDict
+
+## glossary = {
+## 	'Массив': 'упорядоченный набор последовательность данных',
+## 	'Функция': 'это поименованный блок программного кода (тело функции)',
+## 	'Класс': 'описание объекта в виде набора его свойств, которые аналогичны обычным переменным и функциям',
+## 	'Операторы': 'предназначены для задания команд, которые последовательно выполняет компьютер',
+## 	'Переменная': 'принимает значение или, другими словами, в переменную записывается значение с помощью оператора присваивания'
+## }
+
+# glossary = OrderedDict()
+#
+# glossary['Массив'] = 'упорядоченный набор последовательность данных'
+# glossary['Функция'] = 'это поименованный блок программного кода (тело функции)'
+# glossary['Класс'] = 'описание объекта в виде набора его свойств, которые аналогичны обычным переменным и функциям'
+# glossary['Операторы'] = 'предназначены для задания команд, которые последовательно выполняет компьютер'
+# glossary['Переменная'] = 'принимает значение или, другими словами, в переменную записывается значение с помощью оператора присваивания'
+
+# for key, value in glossary.items():
+# 	print("\n" + key.title() + ': ' + value)
+
+#Упражнение 9.14
+
+# from random import randint
+# x = randint(1, 6)
+#
+# class Die():
+# 	def __init__(self, sides=6):
+# 		self.sides = sides
+#
+# 	def roll_die(self):
+# 		return randint(1, self.sides)# print('Cube fell on: ' + str(x))
+#
+# cub = Die()
+# results = []
+#
+# for roll in range(10):
+# 	result = cub.roll_die()
+# 	results.append(result)
+# print('\n10 rolls of a 6-sided die:\n')
+# print(results)
+# print('\n############################################')
+# 
+# cub_10 = Die(sides=10)
+#
+# results = []
+#
+# for roll in range(10):
+# 	result = cub_10.roll_die()
+# 	results.append(result)
+# print('\n10 rolls of a 10-sided die:\n')
+# print(results)
+# print('\n############################################')
+#
+# cub_20 = Die(sides=20)
+#
+# results = []
+#
+# for roll in range(10):
+# 	result = cub_20.roll_die()
+# 	results.append(result)
+# print('\n10 rolls of a 20-sided die:\n')
+# print(results)
+# print('\n############################################')
+
+#Упражнение 9.15

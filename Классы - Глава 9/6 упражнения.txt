@@ -1,0 +1,278 @@
+#Упражнения 9.6 - 9.9
+
+#Упражнение 9.6
+
+class Restaurant:
+	def __init__(self, restaurant_name, cuisine_type):
+		self.restaurant_name = restaurant_name
+		self.cuisine_type = cuisine_type
+		self.number_served = 15
+
+	def describe_restaurant(self):
+		print('Restaurant name: ' + self.restaurant_name)
+		print('Cuisine type: ' + self.cuisine_type)
+
+	def open_restaurant(self):
+		print("Restaurant is opened!")
+
+	def show_served(self):
+		print('Served by visitors: ' + str(self.number_served) + ' peoples.')
+
+	def set_number_served(self, served):
+		self.number_served = served
+
+	def increment_number_served(self, inc_number):
+		self.number_served += inc_number
+
+class IceCreamStand(Restaurant):
+	def __init__(self, restaurant_name, cuisine_type='Ice Cream'):
+		super().__init__(restaurant_name, cuisine_type)
+		self.flavors = []
+	
+	def output_list_flavors(self):
+		print('IceCreamStand has list: ')
+		for flavor in self.flavors:
+			print(' -' + flavor.title())
+
+
+ice_cream_Kiosk = IceCreamStand('Five stars')
+ice_cream_Kiosk.flavors = ['Cream Brule', 'Ice Cream Bucket', 'Lemon ice Brule']
+
+ice_cream_Kiosk.describe_restaurant()
+ice_cream_Kiosk.output_list_flavors()
+
+#Упражнения 9.6 - 9.9
+
+#Упражнение 9.6
+
+# class Restaurant:
+# 	def __init__(self, restaurant_name, cuisine_type):
+# 		self.restaurant_name = restaurant_name
+# 		self.cuisine_type = cuisine_type
+# 		self.number_served = 15
+
+# 	def describe_restaurant(self):
+# 		print('Restaurant name: ' + self.restaurant_name)
+# 		print('Cuisine type: ' + self.cuisine_type)
+
+# 	def open_restaurant(self):
+# 		print("Restaurant is opened!")
+
+# 	def show_served(self):
+# 		print('Served by visitors: ' + str(self.number_served) + ' peoples.')
+
+# 	def set_number_served(self, served):
+# 		self.number_served = served
+
+# 	def increment_number_served(self, inc_number):
+# 		self.number_served += inc_number
+
+# class IceScreamStand(Restaurant):
+# 	def __init__(self, restaurant_name, cuisine_type):
+# 		super().__init__(restaurant_name, cuisine_type)
+# 		self.flavors = []
+
+# 	def show_flavors(self):
+# 		print('\nWe have list of flavors: ')
+# 		for flavor in self.flavors:
+# 			print(' -' + flavor.title())
+
+# IceScream = IceScreamStand('Intiligent', 'IceBucket')
+# IceScream.describe_restaurant()
+# IceScream.flavors = ['chocolate ice', 'mandarin brule', 'rasberry ice']
+# IceScream.show_flavors()
+
+##################################################################################
+
+#Упражнение 9.7
+
+# class User:
+# 	def __init__(self, first_name, last_name):
+# 		self.first_name = first_name
+# 		self.last_name = last_name
+
+# 	def describe_user(self):
+# 		print('Fist name: ' + self.first_name)
+# 		print('Last name: ' + self.last_name)
+
+# 	def greet_user(self):
+# 		print('Hello, ' + self.first_name)
+		
+# user_1 = User('Олексій', 'Ніколаєнко')
+
+# print('First name: ' + user_1.first_name + 
+# 	'\nLast name: ' + user_1.last_name)
+# user_1.greet_user()
+
+# class Admin(User):
+# 	def __init__(self, first_name, last_name):
+# 		super().__init__(first_name, last_name)
+# 		self.privileges = []
+
+# 	def show_privileges(self):
+# 		if 'Admin' in self.privileges:
+# 			print('\nЗдравствуй Админушка)' + '\nТебе доступны такие привилегии: ')
+# 			privilege = ['  -разрешено удалять пользователей', '  -разрешено банить пользователей', '  -разрешено добавлять сообщения']
+# 			for privileg in privilege:
+# 				print(privileg)
+# 		elif 'User' in self.privileges:
+# 			print('\nЗдравствуй обычний юзер)))' + '\nТебе только можно писать письма на форуме...')
+
+# test_admin = Admin('Admin', 'Nikolaenko')
+# test_user = Admin('User', 'Nikolaenko')
+
+# test_admin.describe_user()
+# test_admin.privileges = ['Admin']
+# test_admin.show_privileges()
+
+# print('\n#################################################\n')
+
+# test_user.describe_user()
+# test_user.privileges = ['User']
+# test_user.show_privileges()
+
+##################################################################################
+
+#Упражнение 9.8
+
+# class User:
+# 	def __init__(self, first_name, last_name):
+# 		self.first_name = first_name
+# 		self.last_name = last_name
+
+# 	def describe_user(self):
+# 		print('Fist name: ' + self.first_name)
+# 		print('Last name: ' + self.last_name)
+
+# 	def greet_user(self):
+# 		print('Hello, ' + self.first_name)
+		
+# user_1 = User('Олексій', 'Ніколаєнко')
+
+# print('First name: ' + user_1.first_name + 
+# 	'\nLast name: ' + user_1.last_name)
+# user_1.greet_user()
+
+# class Admin(User):
+# 	def __init__(self, first_name, last_name):
+# 		super().__init__(first_name, last_name)
+# 		self.privileges = Privileges()
+
+# class Privileges():
+# 	def __init__(self, privileges=[]):
+# 		self.privileges = privileges
+
+# 	def show_privileges(self):
+# 		if self.privileges:
+# 			for privilege in self.privileges:
+# 				print("- " + privilege)
+# 		else:
+# 			print("- У этого пользователя нету привилегий.")
+
+# 		# if 'Admin' in self.privileges:
+# 		# 	print('\nЗдравствуй Админушка)' + 
+# 		# 		'\nТебе доступны такие привилегии: ')
+# 		# 	privilege = [
+# 		# 	'  -разрешено удалять пользователей', 
+# 		# 	'  -разрешено банить пользователей', 
+# 		# 	'  -разрешено добавлять сообщения'
+# 		# 	]
+
+# 		# 	for privileg in privilege:
+# 		# 		print(privileg)
+# 		# elif 'User' in self.privileges:
+# 		# 	print('\nЗдравствуй обычний юзер)))' + 
+# 		# 		'\nТебе только можно писать письма на форуме...')
+
+# admin = Admin('Admin', 'Nikolaenko')
+
+# print()
+
+# admin.describe_user()
+# # admin.privileges = ['Admin']
+# admin.privileges.show_privileges()
+
+# print('\nДобавление привилегий...\n')
+# admin_privilege = [
+# 	'разрешено удалять пользователей', 
+# 	'разрешено банить пользователей', 
+# 	'разрешено добавлять сообщения'
+# ]
+
+# admin.privileges.privileges = admin_privilege
+# admin.privileges.show_privileges()
+
+##################################################################################
+
+#Упражнение 9.9
+
+# class Car:
+# 	def __init__(self, make, model, year):
+# 		self.make = make
+# 		self.model = model
+# 		self.year = year
+# 		self.odometer_reading = 0
+
+# 	def get_descriptive_name(self):
+# 		full_name = str(self.year) + ' ' + self.make + ' ' + self.model
+# 		return full_name.title()
+
+# 	def read_odometer(self):
+# 		print('This car has ' + str(self.odometer_reading) + ' miles on it.')
+
+# 	def update_odometer(self, mileage):
+# 		if mileage >= self.odometer_reading:
+# 			self.odometer_reading = mileage
+# 		else:
+# 			print('You can`t roll back an odometer!')
+
+# 	def increment_odometer(self, miles):
+# 		self.odometer_reading += miles
+
+# class Battery:
+# 	def __init__(self, battery_size = 60):
+# 		#Инициализирует атрибуты аккумулятора.
+# 		self.battery_size = battery_size
+
+# 	def describe_battery(self):
+# 		print('This car has ' + str(self.battery_size) + ' -kwh battery.')
+
+# 	def update_battery(self):
+# 		if self.battery_size == 60:
+# 			self.battery_size = 85
+# 			print('Upgraded the battery to 85 kWh.')
+# 		else:
+# 			print('The battery is already upgraded.')
+
+
+# 	#########---Добавляем метод get_range---#########
+# 	def get_range(self):
+# 		#Выводит приблизительный запас хода для аккумулятора.
+# 		if self.battery_size == 70:
+# 			range = 240
+# 		elif self.battery_size == 85:
+# 			range = 270
+
+# 		messsage = 'This car can go approximately ' + str(range)
+# 		messsage += ' miles on a full charge. '
+# 		print(messsage)
+
+# class ElectricCar(Car):
+# 	#Представляет аспекты машины, специфические для электромобилей.
+# 	def __init__(self, make, model, year):
+# 		#Инициализирует атрибуты класса-родителя.
+# 		#Затем инициализирует атрибуты, специфические для электромобиля.
+# 		super().__init__(make, model, year)
+# 		self.battery = Battery() #Принимает параметры класса Battery
+
+# print("Make an electric car, and check the battery:")
+# my_tesla = ElectricCar('tesla', 'model s', 2016)
+# my_tesla.battery.describe_battery()
+
+# print("\nUpgrade the battery, and check it again:")
+# my_tesla.battery.update_battery()
+# my_tesla.battery.describe_battery()
+
+# print("\nTry upgrading the battery a second time.")
+# my_tesla.battery.update_battery()
+# my_tesla.battery.describe_battery()

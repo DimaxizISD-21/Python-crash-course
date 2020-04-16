@@ -1,0 +1,163 @@
+#Ќазначение атрибуту значени€ по умолчанию
+
+# class Car:
+# 	def __init__(self, make, model, year):
+# 		self.make = make
+# 		self.model = model
+# 		self.year = year
+# 		self.odometr_reading = 0
+
+# 	def get_descriptive_name(self):
+# 		long_name = str(self.year) + ' ' + self.make + ' ' + self.model
+# 		return long_name.title()
+
+# 	def read_odometr(self):
+# 		print('This car has ' + str(self.odometr_reading) + ' miles on it.')
+
+# my_new_car = Car('audi', 'a4', 2016)
+# print(my_new_car.get_descriptive_name())
+# my_new_car.read_odometr()
+
+#############################################################################
+
+#—обственный пример)))
+
+# class User:
+# 	def __init__(self, name, year, country):
+# 		self.name = name
+# 		self.year = year
+# 		self.country = country
+# 		self.money = 1000000
+
+# 	def info_user(self):
+# 		info = 'Name: ' + self.name + '\nYear: ' + str(self.year) + '\nCountry: ' + self.country
+# 		return info
+
+# 	def show_money(self):
+# 		print('I have ' + str(self.money) + ' $ money)')
+
+# user_1 = User('Oleksiy', 19, 'Ukraine')
+# print(user_1.info_user())
+# print()
+# # user_1.money = 10  # -- изменение значений атрибутов
+# user_1.show_money()	
+
+#############################################################################
+
+#ѕр€мое изменение значени€ атрибута
+
+# class Car:
+# 	def __init__(self, make, model, year):
+# 		self.make = make
+# 		self.model = model
+# 		self.year = year
+# 		self.odometr_reading = 0
+
+# 	def get_descriptive_name(self):
+# 		long_name = str(self.year) + ' ' + self.make + ' ' + self.model
+# 		return long_name.title()
+
+# 	def read_odometr(self):
+# 		print('This car has ' + str(self.odometr_reading) + ' miles on it.')
+
+# my_new_car = Car('audi', 'a4', 2016)
+# print(my_new_car.get_descriptive_name())
+# my_new_car.odometr_reading = 23
+# my_new_car.read_odometr()
+
+#############################################################################
+
+#»зменение значени€ атрибута с использованием метода
+
+# class Car:
+# 	def __init__(self, make, model, year):
+# 		self.make = make
+# 		self.model = model
+# 		self.year = year
+# 		self.odometr_reading = 0
+
+# 	def get_descriptive_name(self):
+# 		long_name = str(self.year) + ' ' + self.make + ' ' + self.model
+# 		return long_name.title()
+
+# 	def read_odometr(self):
+# 		print('This car has ' + str(self.odometr_reading) + ' miles on it.')
+
+# 	def update_odometer(self, mileage):
+#		"""”станавливает заданное значение на одометре."""
+# 		self.odometr_reading = mileage
+
+# my_new_car = Car('audi', 'a4', 2016)
+# print(my_new_car.get_descriptive_name())
+# my_new_car.update_odometer(99)
+# my_new_car.read_odometr()
+
+#############################################################################
+
+#–асширение метода update_odometer()
+
+# class Car:
+# 	def __init__(self, make, model, year):
+# 		self.make = make
+# 		self.model = model
+# 		self.year = year
+# 		self.odometr_reading = 45
+
+# 	def get_descriptive_name(self):
+# 		long_name = str(self.year) + ' ' + self.make + ' ' + self.model
+# 		return long_name.title()
+
+# 	def read_odometr(self):
+# 		print('This car has ' + str(self.odometr_reading) + ' miles on it.')
+
+# 	def update_odometer(self, mileage):
+#		"""
+#		”станавливает на одометре заданное значение.
+#		ѕри попытке обратной подкрутки изменение отклон€етс€.
+#		"""
+# 		if mileage >= self.odometr_reading:
+# 			self.odometr_reading = mileage
+# 		else:
+# 			print('You can`t roll back an odometer!')
+
+# my_new_car = Car('audi', 'a4', 2016)
+# print(my_new_car.get_descriptive_name())
+# my_new_car.update_odometer(20)
+# my_new_car.read_odometr()
+
+#############################################################################
+
+#»зменение значени€ атрибута с приращением
+
+# class Car:
+# 	def __init__(self, make, model, year):
+# 		self.make = make
+# 		self.model = model
+# 		self.year = year
+# 		self.odometer_reading = 0
+
+# 	def get_descriptive_name(self):
+# 		long_name = str(self.year) + ' ' + self.make + ' ' + self.model
+# 		return long_name.title()
+
+# 	def read_odometer(self):
+# 		print('This car has ' + str(self.odometer_reading) + ' miles on it.')
+
+# 	def update_odometer(self, mileage):
+# 		if mileage >= self.odometer_reading:
+# 			self.odometer_reading = mileage
+# 		else:
+# 			print('You can`t roll back an odometer!')
+
+# 	def increment_odometer(self, miles):
+# 		"""”величивает показани€ одометра с заданным приращением."""
+# 		self.odometer_reading += miles
+
+# my_new_car = Car('Subaru', 'outback', 2013)
+# print(my_new_car.get_descriptive_name())
+
+# my_new_car.update_odometer(23500)
+# my_new_car.read_odometer()
+
+# my_new_car.increment_odometer(100)
+# my_new_car.read_odometer()

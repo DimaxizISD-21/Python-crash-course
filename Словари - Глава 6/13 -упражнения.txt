@@ -1,0 +1,117 @@
+# peoples = {
+# 	'everest': {
+# 		'name': 'Alex',
+# 		'age': 27,
+# 		'location': 'Ukraine'
+# 	},
+# 	'suckers': {
+# 		'name': 'Dimax',
+# 		'age': 19,
+# 		'location': 'Australia'
+# 	},
+# 	'blitzstorm': {
+# 		'name': 'Zibert',
+# 		'age': 23,
+# 		'location': 'Germany'
+# 	}
+# }
+
+everest = {
+	'name': 'Alex',
+	'age': 27,
+	'location': 'Ukraine'
+}
+
+blitzstorm = {
+	'name': 'Zibert',
+	'age': 23,
+	'location': 'Germany'
+}
+
+suckers = {
+	'name': 'Dimax',
+	'age': 19,
+	'location': 'Australia'
+}
+
+peoples = [suckers, blitzstorm, everest]
+
+for people in peoples:
+	print("\nName: " + people['name'].title() + "\nAge: " +
+		str(people['age']) + "\nLocation: " + people['location'].title())
+
+print("\n-----------------------------")
+
+cat = {
+	'nickname': 'Lacky',
+	'owner': 'Katya'
+}
+
+dog = {
+	'nickname': 'Raul',
+	'owner': 'Alex'
+}
+
+pets = [cat, dog]
+
+for pet in pets:
+	print("\nNickname: " + pet['nickname'].title() + 
+		"\nOwner: " + pet['owner'].title())
+
+print("\n-----------------------------")
+
+favorite_places = {
+	'Alex': ['Ukraine', 'England', 'China'],
+	'Dimax': ['Australia','USA', 'Lviv'],
+	'Katya': ['Germany', 'Kyiv', 'Canada']
+}
+
+for name, places in favorite_places.items():
+	print("\n" + name.title() + " favorite place: " )
+	for place in places:
+		print("\t" + place.title()) 
+
+print("\n-----------------------------")
+
+favorite_numbers = {
+	'Марина': [5,4,456,43],
+	'Даша': [3,66,7,334,3,5],
+	'Настя': [7,6,4,3,99,45,5],
+	'Алексей': [9,5,6,84,4,432,],
+	'Макс': [15,0,5,4,4,3],
+}
+
+for name, numbers in favorite_numbers.items():
+	print("\n" + name + " is favorite numbers: ")
+	for number in numbers:
+		print("\t" + str(number))
+
+print("\n-----------------------------")
+
+cities = {
+	'Kiev': {
+		'country': 'Ukraine',
+		'population': '44,83',
+		'fact': '«Арсенальная» — самая глубокая станция метро в мире. Ее глубина — 105 метров.',
+	},
+	'New York': {
+		'country': 'USA',
+		'population': '325,7',
+		'fact': 'В Америке живет 4 746 людей, у которых имя и фамилия полностью совпадают. Чаще всего это Томас Томас (Thomas Thomas)',
+	},
+	'Paris': {
+		'country': 'France',
+		'population': '67,12',
+		'fact': 'Франция – самая большая страна в ЕС: ее площадь составляет 551 тыс. км2',
+	},
+}
+
+for city, info in cities.items():
+	print("\nCity: " + city)
+	country = info['country']
+	population = info['population']
+	fact = info['fact']
+	print("\tCountry: " + country.title())
+	print("\tPopulation: " + population.title() + " millions people")
+	print("\tFact: " + fact)
+

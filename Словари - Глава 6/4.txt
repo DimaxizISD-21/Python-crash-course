@@ -1,0 +1,10 @@
+favorite_languages = {
+	'jen': 'Python',
+	'sarah': 'c',
+	'edwart': 'ruby',
+	'phil': 'python'
+}
+
+print("Любимый язык програмирования Sarah это " + 
+	favorite_languages['sarah'].title() + 
+	"!")

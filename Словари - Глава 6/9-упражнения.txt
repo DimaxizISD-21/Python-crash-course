@@ -1,0 +1,75 @@
+# favorite_languages = {
+# 	'jen': 'python',
+# 	'sarah': 'c',
+# 	'edward': 'ruby',
+# 	'phil': 'python',
+# }
+
+# print("The following languages have been mentioned:")
+# for language in favorite_languages.values():
+# 	print(language.title())
+
+# print("\n")
+
+# print("The following languages have been mentioned:")
+# for language in set(favorite_languages.values()):
+# 	print(language.title())
+
+glossary = {
+	'Массив': 'упорядоченный набор последовательность данных',
+	'Функция': 'это поименованный блок программного кода (тело функции)',
+	'Класс': 'описание объекта в виде набора его свойств, которые аналогичны обычным переменным и функциям',
+	'Операторы': 'предназначены для задания команд, которые последовательно выполняет компьютер',
+	'Переменная': 'принимает значение или, другими словами, в переменную записывается значение с помощью оператора присваивания'
+}
+
+glossary['Айди'] = '(от англ. «identificator») – идентификатор.'
+glossary['Айпи '] = '(от англ. «Internet Protocol») – уникальный адрес. Каждый компьютер имеет свой IP, который предоставляет ему провайдер.'
+glossary['Айтишник '] = 'программист, специалист в информационных технологиях (ИТ).'
+glossary['Апдейт '] = '(от англ «update») – обновление.'
+glossary['Аутсорс'] = '(от англ. «outsourcing») – передача предприятием/компанией выполнение определенной работы не своим работникам, а другим (фрилансерам или работникам других компаний)'
+
+
+for glossar in glossary.keys():
+	print("\n" + glossar.title() + " это " + glossary[glossar])
+
+print("\n")
+
+big_rivers_of_country = {
+	'Нил': 'Египете',
+	'Амазонка': 'Бразилии',
+	'Янцзы': 'Китае'
+}
+
+for river in big_rivers_of_country.keys():
+	print("Эта река " + river.title() + " находится в " + 
+		big_rivers_of_country[river] + "!" )
+
+for river in big_rivers_of_country.keys():
+	print("\n" + river.title())
+
+for river in big_rivers_of_country.values():
+	print("\n" + river.title())
+
+print("-----------------------------------------")
+
+favorite_languages = {
+	 'jen': 'python',
+	 'sarah': 'c',
+	 'edward': 'ruby',
+	 'phil': 'python'
+ }
+
+new_users = {
+	'Bill': 'rust',
+	'Masha': 'perl'
+}
+
+print("\nСписок людей которые прошли опрос: ")
+for user in favorite_languages:
+	print("\n\tСпасибо вам " + user.title() + " за участие в опросе!")
+
+print("\nСписок людей которые ещё не пройшли опрос: ")
+for n_user in new_users:
+	print("\n\t" + n_user.title() + " вы ещё не пройшли опрос!!")
+ 

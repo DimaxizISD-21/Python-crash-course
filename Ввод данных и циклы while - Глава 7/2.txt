@@ -1,0 +1,175 @@
+# msg = input("Tell me something, and I will repeat it back to you: ")
+# print(msg)
+
+# print("##################################################################")
+
+# name = input("Enter your name: ")
+# print("Hello, " + name + "!")
+
+# print("##################################################################")
+
+
+# prompt = "If you tell us who you are, we can personalize the messages you see."
+# prompt += "\nWhat is your first name? "
+# name = input(prompt)
+# print("\nHello, " + name + "!")
+
+# print("##################################################################")
+
+# name_car = input("\nЗдравстуйте, какую машину вы бы хотели взять напрокат? " + "\n>>>")
+# print("Вы выбрали машину: " + name_car + "!")
+
+# print("##################################################################")
+
+# place = int(input("\nНа сколько мест вы заказываете столик?" + "\n>>>"))
+
+# if place < 8:
+# 	print("Ваши столики готовы!")
+# else:
+# 	print("Вам придется подождать...") 
+
+# print("##################################################################")
+
+# number = int(input("Введите числа кратные 10: "))
+# if number % 10 == 0:
+# 	print("\nЭто число " + str(number) + " кратне 10")
+# else:
+# 	print("\nЭто число " + str(number) + " не кратне 10")
+
+# print("##################################################################")
+
+# prompt = "\nКакую пиццу вы хотите заказать? "
+# prompt += "\nЕсли вы ничего не заказываете, то введите 'quit' для выхода из программы... \n>>>"
+# while True:
+# 	msg = input(prompt)
+# 	if msg == 'quit':
+# 		break
+# 	else:
+# 		print("Это дополнение включено в заказ!")
+
+# print("##################################################################")
+
+# prompt = "\nДобро пожаловать в наш кинотеатр!!!"
+# prompt += "\nПожалуйста введите сколько вам лет! \n\n>>>"
+# while True:
+# 	number = int(input(prompt))
+# 	if number < 12:
+# 		print("Ваш билет стоит 10$")
+# 	else:
+# 		print("Ваш билет стоит 15$")
+
+# print("##################################################################")
+
+# prompt = "\nКакую пиццу вы хотите заказать? "
+# prompt += "\nЕсли вы ничего не заказываете, то введите 'quit' или 'exit' для выхода из программы... \n\n>>>"
+
+# active = True
+# while active:
+# 	msg = input(prompt)
+# 	if msg == 'quit':
+# 		break
+# 	elif msg == 'exit':
+# 		active = False
+# 	else:
+# 		print("Это дополнение включено в заказ!")
+
+# print("##################################################################")
+
+# while True:
+# 	print("Triggered!!!")
+
+# print("##################################################################")
+
+# Не вправи!!!
+
+# unconfirmed_users = ['alice','brian','cancade']
+# confirmed_users = []
+
+# while unconfirmed_users:
+# 	current_user = unconfirmed_users.pop()
+
+# 	print("\nVerifying user: " + current_user.title())
+# 	confirmed_users.append(current_user)
+
+# 	print("\nThe following users have been confirmed:")
+# 	for confirmed_user in confirmed_users:
+# 		print(confirmed_user.title())
+
+# print("##################################################################")
+
+# pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+# print(pets)
+# while 'cat' in pets:
+# 	pets.remove('cat')
+
+# print(pets)
+
+# print("##################################################################")
+
+# responses = {}
+# pooling_active = True
+
+# while pooling_active:
+# 	name = input("\nWhat is your name? ")
+# 	response = input("Which mointaint would you like to climb somedays? ")
+# 	responses[name] = response
+# 	repeat = input("Would you like to let another person respond? (yes/ no) ")
+
+# 	if repeat == "no":
+# 		pooling_active = False
+
+# 	print("\n---- Poll Results ----")
+# 	for name, response in responses.items():
+# 		print(name + " would like to climb " + response + ".")
+
+# print("##################################################################")
+#Вправи
+
+# sandwich_orders = ['хот-дог','гамбургер','чизбургер']
+# finished_sandwiches = []
+
+# while sandwich_orders:
+# 	print('\nI made your tuna sandwich: ')
+# 	current_order = sandwich_orders.pop()
+# 	print(current_order.title())
+# 	finished_sandwiches.append(current_order)
+
+# print("\n------------Results------------" + 
+# 	"\nСписок приготовленных фастфудов:\n")
+# for order in finished_sandwiches:
+# 	 print(order.title())
+
+# print("##################################################################")
+
+# sandwich_orders = ['хот-дог','pastrami','гамбургер','pastrami','чизбургер','pastrami']
+# print("\nСписок доступных фастфудов: \n")
+
+# for name in sandwich_orders:
+# 	print(name.title())
+
+# print("\nУпсс... но Pastrami больше нету((( \n")
+
+# while 'pastrami' in sandwich_orders:
+# 	sandwich_orders.remove('pastrami')
+
+# for name in sandwich_orders:
+# 	print(name.title())
+
+# print("##################################################################")
+
+# responses = {}
+# pooling_active = True
+
+# while pooling_active:
+# 	name = input("\nКак вас зовут? \n>>>")
+# 	print("\nДобро пожаловать в наше тур агентсво " + name + "!")
+# 	response = input("Где вы бы хотели отдохнуть? \n>>>")
+# 	responses[name] = response
+# 	repeat = input("Хотите ещё раз пройти опрос? (yes/ no) ")
+
+# 	if repeat == "no":
+# 		pooling_active = False
+
+# 	print("\n---- Poll Results ----")
+# 	for name, response in responses.items():
+# 		print(name + " хочет поехать на " + response + ".")

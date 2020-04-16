@@ -1,0 +1,44 @@
+list_users = ['Dimax','Jobs','Jackson']
+print("\nПривет " + "" + list_users[0] + "," + " приходи на party)))")
+print("\nПривет " + "" + list_users[1] + "," + " приходи на party)))")
+
+name = 'Katya'
+list_users.insert(2, name)
+print("\nПривет " + "" + list_users[2] + "," + " мы ради что ты пришла))")
+print("\nА сейчас к нам прийдут 3 человека!!!")
+list_users.insert(0, 'Jaddy')
+print("\nПривет " + "" + list_users[0] + "," + ")))")
+list_users.insert(0, 'Frank')
+print("\nПривет " + "" + list_users[3] + "," + ")))")
+list_users.append('Shady')
+print(list_users)
+print("\nПривет " + "" + list_users[6] + "))" )
+del_name1 = 'Shady'
+list_users.remove(del_name1)
+print(list_users)
+print("\n" + del_name1 + " о нет, надеюсь ты к нам на следущий раз заскочишь на party ")
+del_name2 = 'Jackson'
+list_users.remove(del_name2)
+print(list_users)
+print("\n" + del_name2 + " о нет, надеюсь ты к нам на следущий раз заскочишь на party ")
+del_name3 = 'Katya'
+list_users.remove(del_name3)
+print(list_users)
+print("\n" + del_name3 + " о нет, надеюсь ты к нам на следущий раз заскочишь на party ")
+del_name4 = 'Jobs'
+list_users.remove(del_name4)
+print(list_users)
+print("\n" + del_name4 + " о нет, надеюсь ты к нам на следущий раз заскочишь на party ")
+del_name5 = 'Dimax'
+list_users.remove(del_name5)
+print(list_users)
+print("\n" + del_name5 + " о нет, надеюсь ты к нам на следущий раз заскочишь на party ")
+print(list_users)
+print("\nИ так у нас остается 2 человека...")
+print("\nЯ " + list_users[0] + " и " + list_users[1] + " подумали что эта party полное гавно и решили свалить!!!")
+del(list_users[0])
+del(list_users[0])
+print(list_users)
+
+print("\nМмм...класная пати")
+print(list_users)
